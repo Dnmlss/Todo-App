@@ -1,7 +1,10 @@
+import { UserProvider } from './context/UserProvider';
+
 export const TodoApp = () => {
 	return (
-		<>
-			<div>TodoApp</div>
-		</>
+		<UserProvider>
+			<h1>TodoApp</h1>
+			<hr />
+		</UserProvider>
 	);
 };
