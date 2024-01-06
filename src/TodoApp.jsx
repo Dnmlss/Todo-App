@@ -1,6 +1,6 @@
 import { Route, Routes, Navigate } from 'react-router-dom';
 import { UserProvider } from './context/UserProvider';
-import { HomePage, TodosPage, InProgressPage, NavBar } from './index';
+import { HomePage, TodosPage, InProgressPage, NavBar } from './components/index';
 
 export const TodoApp = () => {
 	return (

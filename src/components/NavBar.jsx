@@ -12,21 +12,21 @@ export const NavBar = () => {
 					<ul className='navbar-nav'>
 						<NavLink
 							to='/home'
-							className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}
+							className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
 						>
 							Home
 						</NavLink>
 
 						<NavLink
 							to='/todos'
-							className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}
+							className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
 						>
 							ToDos
 						</NavLink>
 
 						<NavLink
 							to='/inProgress'
-							className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}
+							className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
 						>
 							In progress
 						</NavLink>

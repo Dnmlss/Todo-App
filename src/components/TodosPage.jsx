@@ -1,8 +1,9 @@
 import { useContext } from 'react';
-import { UserContext } from './context/userContext';
+import { UserContext } from '../context/userContext';
 
 export const TodosPage = () => {
-	const {} = useContext(UserContext);
+	const algo = useContext(UserContext);
+	console.log(algo);
 
 	return (
 		<>
@@ -13,7 +14,7 @@ export const TodosPage = () => {
 
 			<div className='input-group mb-3'>
 				<input type='text' className='form-control' placeholder="What's next?" />
-				<button className='btn btn-outline-secondary mt-1'>Button</button>
+				<button className='btn btn-outline-secondary mt-1'>Add ToDo</button>
 			</div>
 		</>
 	);
