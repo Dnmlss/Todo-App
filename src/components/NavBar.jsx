@@ -23,13 +23,6 @@ export const NavBar = () => {
 						>
 							ToDos
 						</NavLink>
-
-						<NavLink
-							to='/inProgress'
-							className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
-						>
-							In progress
-						</NavLink>
 					</ul>
 				</div>
 			</div>

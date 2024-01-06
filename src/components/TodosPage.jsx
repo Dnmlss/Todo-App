@@ -3,7 +3,7 @@ import { UserContext } from '../context/userContext';
 
 export const TodosPage = () => {
 	const algo = useContext(UserContext);
-	console.log(algo);
+	//console.log(algo);
 
 	return (
 		<>
