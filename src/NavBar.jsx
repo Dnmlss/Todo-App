@@ -5,7 +5,7 @@ export const NavBar = () => {
 		<nav className='navbar navbar-expand-lg navbar-dark bg-dark rounded-3'>
 			<div className='container-fluid'>
 				<Link className='navbar-brand' to='/'>
-					My ToDo
+					ToDo List
 				</Link>
 
 				<div className='collapse navbar-collapse' id='navbarNav'>
@@ -18,10 +18,10 @@ export const NavBar = () => {
 						</NavLink>
 
 						<NavLink
-							to='/todo'
+							to='/todos'
 							className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}
 						>
-							ToDo
+							ToDos
 						</NavLink>
 
 						<NavLink
@@ -29,13 +29,6 @@ export const NavBar = () => {
 							className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}
 						>
 							In progress
-						</NavLink>
-
-						<NavLink
-							to='/complete'
-							className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}
-						>
-							Complete
 						</NavLink>
 					</ul>
 				</div>

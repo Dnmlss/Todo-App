@@ -1,3 +1,4 @@
 export * from './NavBar';
-export * from './';
-export * from './';
+export * from './HomePage';
+export * from './TodosPage';
+export * from './InProgressPage';
