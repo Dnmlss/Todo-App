@@ -1,8 +1,8 @@
-import { Route, Routes, Navigate } from 'react-router-dom';
-import { UserProvider } from './context/UserProvider';
-import { HomePage, TodosPage, NavBar } from './components/index';
+import { Route, Routes, Navigate, Outlet } from 'react-router-dom';
+import { UserProvider } from '../context/UserProvider';
+import { HomePage, TodoApp, NavBar } from './index';
 
-export const TodoApp = () => {
+export const MainApp = () => {
 	return (
 		<UserProvider>
 			{/* <h1>TodoApp</h1> */}
@@ -11,7 +11,7 @@ export const TodoApp = () => {
 
 			<Routes>
 				<Route path='/' element={<HomePage />} />
-				<Route path='todos' element={<TodosPage />} />
+				<Route path='todos' element={<TodoApp />} />
 
 				{/* si una ruta no existe, nos redirecciona al Home */}
 				<Route path='/*' element={<Navigate to={'/'} />} />

@@ -1,4 +1,5 @@
 import { useEffect, useReducer } from 'react';
+import { todoReducer } from '../components/todoReducer';
 
 // función de inicialización
 const init = () => {
@@ -41,8 +42,12 @@ export const useTodos = () => {
 	};
 
 	return {
+		pendingTodosCount: todos.filter((todo) => !todo.done).length,
 		handleDeleteTodo,
 		handleToggleTodo,
 		handleNewTodo,
+		todosCount: todos.length,
+		todos,
+		init,
 	};
 };
